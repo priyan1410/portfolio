@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Padmapriyan E</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-glow"></div>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Port<span class="highlight">folio.</span></a>
+            <nav class="nav">
+                <a href="index.html#projects" class="nav-link">Back to Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-hero section">
+            <div class="container">
+                <div class="project-hero-content fade-in-up">
+                    <h1 class="project-title" id="p-title">Loading Project...</h1>
+                    <div class="tags" id="p-tags">
+                        <!-- Tags will be injected here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container project-details-container">
+
+
+                <div class="project-info-grid">
+                    <div class="info-col fade-in-up delay-2">
+                        <h3>Overview</h3>
+                        <p id="p-overview">Loading description...</p>
+
+                        <div class="tech-stack-section">
+                            <h3>Technologies Used</h3>
+                            <ul class="tech-list" id="p-tech">
+                                <!-- Tech list injected here -->
+                            </ul>
+                        </div>
+
+                        <!-- Gallery Section (Moved to Left Side) -->
+                        <div class="project-gallery-section" id="gallery-container" style="display: none;">
+                            <h3>Project Screenshots</h3>
+                            <div class="gallery-grid" id="p-gallery">
+                                <!-- Gallery images injected here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="features-col fade-in-up delay-3">
+                        <h3>Key Features</h3>
+                        <ul class="feature-list" id="p-features">
+                            <!-- Features injected here -->
+                        </ul>
+
+                        <div class="project-links margin-top-2">
+                            <div class="code-actions">
+                                <a href="#" target="_blank" id="github-btn" class="btn btn-primary">
+                                    <i class="fab fa-github"></i> View Project on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="script.js"></script>
+    <script>
+        // Init project details on load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProjectDetails();
+        });
+    </script>
+</body>
+
+</html>
