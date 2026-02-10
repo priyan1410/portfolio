@@ -797,7 +797,10 @@ img {
     color: var(--text-main);
     transition: 0.3s;
     text-decoration: none;
+
+    /* --- Resume Actions --- */
     padding: 5px;
+
 }
 
 .contact-link:hover {
