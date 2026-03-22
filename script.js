@@ -54,6 +54,29 @@ if (sections.length > 0 && navLinks.length > 0) {
 
 /* --- Project Data & Dynamic Loading --- */
 const projectsData = {
+    "nexus-ai": {
+        title: "Nexus – AI RAG Document Assistant",
+        tags: ["AI/RAG", "LangChain", "Mistral", "FAISS"],
+        image: "https://placehold.co/1200x600/101015/0ea5e9?text=Nexus+AI+RAG",
+        overview: "Nexus is an AI-powered document assistant that uses a Retrieval-Augmented Generation (RAG) pipeline to let users upload documents and ask questions. It processes the document, retrieves relevant information, and generates accurate answers using a local language model (Mistral via Ollama), all within a modern chat-based interface with an Aurora background and glassmorphism styling.",
+        tech: ["Python", "LangChain", "FAISS", "Mistral (Ollama)", "HuggingFace Embeddings", "HTML/CSS/JS"],
+        github: "https://github.com/priyan1410/RAG",
+        gallery: [
+            "images/Nexus – AI RAG Document Assistant/image.png",
+            "images/Nexus – AI RAG Document Assistant/image copy.png",
+            "images/Nexus – AI RAG Document Assistant/image copy 2.png"
+        ],
+        features: [
+            "Document Upload Support – Accepts PDF and text files for analysis",
+            "Context-Aware Q&A – Answers based only on document content",
+            "RAG Architecture – Combines retrieval (FAISS) + generation (LLM)",
+            "Fast Semantic Search – Uses embeddings for accurate retrieval",
+            "Local LLM Integration – Runs Mistral via Ollama (no API needed)",
+            "Interactive Chat UI – Clean, responsive, real-time messaging interface",
+            "Loading & Feedback System – Shows processing and response states",
+            "Modern UI Design – Aurora background, smooth animations, glassmorphism style"
+        ]
+    },
     "model-ai": {
         title: "Model Recommendation AI",
         tags: ["AutoML", "Gemini 2.5 Flash", "Flask", "XGBoost", "Tailwind CSS"],
@@ -106,7 +129,7 @@ const projectsData = {
         ]
     },
     "student-sys": {
-        title: "Student Management System",
+        title: "Student Base Management System",
         tags: ["OpenCV", "Face Recognition", "MySQL", "Python"],
         image: "https://placehold.co/1000x600/101015/6366f1?text=Student+Management+System",
         overview: "A dual-interface application incorporating Computer Vision and Database Management to streamline institutional records. It features a Staff Module for administrative control and a Student Module for performance tracking. The system integrates facial recognition (OpenCV/Face_recognition) for automated group attendance and uses MySQL for secure data storage. It offers real-time attendance calculation, visual verification for staff, and detailed academic analytics for students.",
