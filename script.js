@@ -54,6 +54,33 @@ if (sections.length > 0 && navLinks.length > 0) {
 
 /* --- Project Data & Dynamic Loading --- */
 const projectsData = {
+    "prion-ai": {
+        title: "Prion Agentic AI <span style='color: #ef4444; font-size: 0.7em;'>(Incomplete)</span>",
+        tags: ["Incomplete", "Agentic AI", "Electron", "React 19", "FastAPI", "Python"],
+        image: "https://placehold.co/1200x600/101015/8b5cf6?text=Prion+Agentic+AI+(Incomplete)",
+        overview: "Prion AI is an autonomous, agentic desktop assistant engineered specifically for Microsoft Windows (10/11). Operating as an intelligent OS overlay, it translates natural language intent into low-level operating system actions, browser automation, app lifecycle management, persistent memory recall, and multi-modal voice processing.<br><br><span style='color: #ef4444; font-weight: 600; display: inline-block; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.25); padding: 8px 12px; border-radius: 8px;'><i class='fas fa-exclamation-triangle'></i> Project Incomplete: Development paused due to free API token limitations.</span>",
+        tech: [
+            "Python 3.13+ (FastAPI, Uvicorn, Pydantic v2)",
+            "Electron 34 & TypeScript 5.7",
+            "React 19, Vite 6 & TailwindCSS 4",
+            "Framer Motion 12 & Zustand 5",
+            "Ollama (Local LLM) & OpenRouter API (Cloud LLMs)",
+            "OpenAI Whisper & PyAudio (Voice STT)",
+            "ChromaDB & SQLite (Vector & Persistent Memory)",
+            "pywin32, pywinauto & psutil (Windows Automation)",
+            "Playwright / Chrome DevTools (Browser Control)"
+        ],
+        github: "https://github.com/priyan1410/Prion-Agentic-AI",
+        features: [
+            "15-Stage Cognitive Reasoning Pipeline: Structured end-to-end reasoning from intent parsing and constraint validation to tool execution, verification, and learning.",
+            "3-Tier Multi-Modal LLM Router: Ultra-fast regex direct match (<10ms) for routine system tasks, local Ollama for private processing, and cloud OpenRouter for complex multi-step reasoning.",
+            "14-Level Windows Application Discovery: Comprehensive application launcher traversing running processes, registry keys (HKCU/HKLM), UWP Store apps, shortcuts, and Winget auto-installer.",
+            "3-Tier Safety & Security Model: Strict permission boundaries requiring explicit user confirmation before executing critical OS operations (process termination, shell scripts, registry changes).",
+            "Fluid Morphing Desktop Overlay: Floating orb and morphing glassmorphic chat interface with click-through transparency and smooth Framer Motion animations.",
+            "Voice & System Automation: Hands-free voice control powered by local OpenAI Whisper STT, deep OS process control, and Playwright browser automation.",
+            "Persistent Vector Memory: Dual-layer memory architecture integrating SQLite with ChromaDB vector embeddings for long-term context retention across sessions."
+        ]
+    },
     "nexus-ai": {
         title: "Nexus – AI RAG Document Assistant",
         tags: ["AI/RAG", "LangChain", "Mistral", "FAISS"],
