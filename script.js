@@ -142,6 +142,38 @@ const projectsData = {
             "Student Dashboard: Academic breakdown & subject-wise analytics",
             "Secure Database Management with cleanup protocols"
         ]
+    },
+    "restaurant-billing": {
+        title: "Restaurant Billing Software",
+        tags: ["Desktop POS", "Electron", "React", "MySQL", "Tailwind CSS"],
+        image: "images/Billing Software/Screenshot 2026-08-14 105749.png",
+        overview: "Kish Billing Software is a modern, high-performance desktop Point of Sale (POS) and restaurant management application built specifically for Mandhi restaurants, eateries, and food service businesses. It streamlines front-of-house billing operations, kitchen workflow management, token generation, expense tracking, and financial analytics into a fast, reliable desktop interface with multi-device web API capabilities and cloud database sync.",
+        tech: ["Electron 33", "React 18", "TypeScript", "Vite", "Tailwind CSS", "MySQL 8.0", "Zustand", "Node.js", "jsPDF", "Recharts", "Supabase / Cloud Sync", "@tauri-apps/api"],
+        github: "https://github.com/priyan1410/Billing_Software",
+        gallery: [
+            "images/Billing Software/Screenshot 2026-08-14 105749.png",
+            "images/Billing Software/Screenshot 2026-08-14 105808.png",
+            "images/Billing Software/Screenshot 2026-08-14 105818.png",
+            "images/Billing Software/Screenshot 2026-08-14 105830.png",
+            "images/Billing Software/Screenshot 2026-08-14 105839.png",
+            "images/Billing Software/Screenshot 2026-08-14 105856.png",
+            "images/Billing Software/Screenshot 2026-08-14 105910.png",
+            "images/Billing Software/Screenshot 2026-08-14 105922.png",
+            "images/Billing Software/Screenshot 2026-08-14 105934.png",
+            "images/Billing Software/Screenshot 2026-08-14 105947.png"
+        ],
+        features: [
+            "Fast Billing & POS Interface: Lightning-fast order creation for Dine-In, Takeaway, and Delivery with multi-portion variants (Quarter / Half / Full), table assignment, and customizable discounts.",
+            "Live Token System: Automated queue token generation, itemized token breakdown for kitchen pass display, and live token status tracking.",
+            "Menu & Category Management: Dynamic category management, dish configuration with HSN/SAC codes, flexible unit types (Pcs, Kg, Litre, Plate, Box), and portion pricing rules.",
+            "Advanced Thermal Receipt & Printer Configuration: Dual thermal printer routing (printer1 / printer2 targets for bill vs kitchen token), receipt header/footer note customization, logo printing, GST breakdown, and tax toggle.",
+            "Pre-Orders & Advance Booking: Track future orders, log advance payments, manage customer contact records, and convert pre-orders directly into finalized bills.",
+            "Financial Analytics & P&L Dashboard: Real-time sales tracking, daily order volume, expense vs. revenue profit & loss summaries, custom date filtering, and graphical charts powered by Recharts.",
+            "Expense Tracker: Categorized operational expense logging (Supplies, Utilities, Salaries, Rent) with payment mode records (Cash, UPI, Card, DEO).",
+            "Multi-User Auth & Role Management: Secure credentials, role-based controls, restaurant branding customization, and account management.",
+            "Auto-Database Initialization & Cloud Sync Engine: Self-healing MySQL schema setup on application launch, background database backup/restore manager, and Supabase/Cloud sync adapter for remote telemetry.",
+            "Mobile Web Companion App: Embedded REST API server (mobile-web-application/api-server.js) permitting staff to access billing and table status from any mobile browser or tablet on the local network."
+        ]
     }
 };
 
