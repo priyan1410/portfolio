@@ -129,10 +129,10 @@ const projectsData = {
         ]
     },
     "student-sys": {
-        title: "Student Base Management System",
-        tags: ["OpenCV", "Face Recognition", "MySQL", "Python"],
-        image: "https://placehold.co/1000x600/101015/6366f1?text=Student+Management+System",
-        overview: "A dual-interface application incorporating Computer Vision and Database Management to streamline institutional records. It features a Staff Module for administrative control and a Student Module for performance tracking. The system integrates facial recognition (OpenCV/Face_recognition) for automated group attendance and uses MySQL for secure data storage. It offers real-time attendance calculation, visual verification for staff, and detailed academic analytics for students.",
+        title: "Student Base Management System <span style='color: #ef4444; font-size: 0.7em;'>(Incomplete)</span>",
+        tags: ["Incomplete", "OpenCV", "Face Recognition", "MySQL", "Python"],
+        image: "https://placehold.co/1000x600/101015/ef4444?text=Student+Management+System+(Incomplete)",
+        overview: "A dual-interface application incorporating Computer Vision and Database Management to streamline institutional records. It features a Staff Module for administrative control and a Student Module for performance tracking.<br><br><span style='color: #ef4444; font-weight: 600; display: inline-block; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.25); padding: 8px 12px; border-radius: 8px;'><i class='fas fa-exclamation-triangle'></i> Project Incomplete: Problem with encoding the images during facial recognition setup.</span>",
         tech: ["Python", "OpenCV (Computer Vision)", "Face_recognition (HOG)", "MySQL (Clever Cloud)", "Tabulate"],
         github: "https://github.com/priyan1410/SBMS",
         features: [
@@ -146,7 +146,7 @@ const projectsData = {
     "restaurant-billing": {
         title: "Restaurant Billing Software",
         tags: ["Desktop POS", "Electron", "React", "MySQL", "Tailwind CSS"],
-        image: "images/Billing Software/Screenshot 2026-08-14 105749.png",
+        image: "https://placehold.co/1200x600/101015/f59e0b?text=Restaurant+Billing+Software",
         overview: "Kish Billing Software is a modern, high-performance desktop Point of Sale (POS) and restaurant management application built specifically for Mandhi restaurants, eateries, and food service businesses. It streamlines front-of-house billing operations, kitchen workflow management, token generation, expense tracking, and financial analytics into a fast, reliable desktop interface with multi-device web API capabilities and cloud database sync.",
         tech: ["Electron 33", "React 18", "TypeScript", "Vite", "Tailwind CSS", "MySQL 8.0", "Zustand", "Node.js", "jsPDF", "Recharts", "Supabase / Cloud Sync", "@tauri-apps/api"],
         github: "https://github.com/priyan1410/Billing_Software",
@@ -185,13 +185,18 @@ function loadProjectDetails() {
     if (!project) return; // Or redirect to 404
 
     // Populate Data
-    document.getElementById('p-title').innerText = project.title;
+    document.getElementById('p-title').innerHTML = project.title;
     // document.getElementById('p-image').src = project.image; // Removed as per user request
-    document.getElementById('p-overview').innerText = project.overview;
+    document.getElementById('p-overview').innerHTML = project.overview;
 
     // Tags
     const tagsContainer = document.getElementById('p-tags');
-    tagsContainer.innerHTML = project.tags.map(tag => `<span>${tag}</span>`).join('');
+    tagsContainer.innerHTML = project.tags.map(tag => {
+        if (tag.toLowerCase() === 'incomplete') {
+            return `<span style="color: #ef4444; border-color: rgba(239, 68, 68, 0.4);">${tag}</span>`;
+        }
+        return `<span>${tag}</span>`;
+    }).join('');
 
     // Tech List
     const techList = document.getElementById('p-tech');
